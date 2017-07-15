@@ -38,7 +38,7 @@ Irene Epifanio
 See Epifanio (2017) about advantages and limitations of IPM, and about the parameters to be used in \code{\link[party]{cforest}}.
 }
 \seealso{
-\code{\link{ipmpartynew}}, \code{\link{ipmrf}}, \code{\link{ipmrfnew}}
+\code{\link{ipmpartynew}}, \code{\link{ipmrf}}, \code{\link{ipmranger}}, \code{\link{ipmrfnew}}, \code{\link{ipmrangernew}}
 }
 \examples{
 #Note: more examples can be found at 

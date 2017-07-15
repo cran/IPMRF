@@ -6,7 +6,7 @@ wv=c()
 wrow=1
 decision=ar[1,5]
 
-while(decision==1){
+while(decision != -1){
 
 wv=c(wv,ar[wrow,3])
 

@@ -1,0 +1,9 @@
+Version: 1.1 [2017-07-15]
+*New funtions made by Stefano Nembrini compute IPM with package ranger.
+*Small change (the funtion does the same as the previous version) in function prevtree for reading regression trees from randomForest.
+*Submitted to CRAN.
+
+
+Version: 1.0 [2017-05-02]
+* First package version.
+* Submitted to CRAN.

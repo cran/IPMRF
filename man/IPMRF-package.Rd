@@ -10,18 +10,20 @@ random forests. See I. Epifanio (2017). Intervention in prediction measure: a ne
  \tabular{ll}{
         Package: \tab IPMRF\cr
         Type: \tab Package\cr
-        Version: \tab 1.0\cr
-        Date: \tab 2017-05-02\cr
+        Version: \tab 1.1\cr
+        Date: \tab 2017-07-15\cr
     }
  Main Functions:
  \itemize{
   \item {ipmparty:} {IPM casewise with CIT-RF by \pkg{party} for OOB samples}
 	\item {ipmpartynew:} {IPM casewise with CIT-RF by \pkg{party} for new samples}
-\item {ipmrf:} {IPM casewise with CIT-RF by \pkg{randomForest} for OOB samples}
-	\item {ipmrfnew:} {IPM casewise with CIT-RF by \pkg{randomForest} for new samples}
+\item {ipmrf:} {IPM casewise with CART-RF by \pkg{randomForest} for OOB samples}
+	\item {ipmrfnew:} {IPM casewise with CART-RF by \pkg{randomForest} for new samples}
+	\item {ipmranger:} {IPM casewise with RF by \pkg{ranger} for OOB samples}
+	\item {ipmrangernew:} {IPM casewise with RF by \pkg{ranger} for new samples}
  }
 }
-\author{Irene Epifanio}
+\author{Irene Epifanio, Stefano Nembrini}
 \references{
 Pierola, A. and Epifanio, I. and Alemany, S. (2016) An ensemble of ordered logistic regression and random forest for child garment size matching. \emph{Computers & Industrial Engineering}, \bold{101}, 455--465.
 
