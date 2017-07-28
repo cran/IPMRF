@@ -29,14 +29,22 @@ ib=mi[,i] #in bag
 #out-of-bag
 ob=which(ib==0)
 
+
+
+
 #which variables used for predicting
 for(j in 1:length(ob)){
 da1=da[ob[j],]
 wv=prevtreeparty(ar,da1)
+
+if (is.null(wv)){totob[ob[j]]=totob[ob[j]]-1}
+else{
+
 pupi=table(wv)/length(wv)
 dond= unique(sort(wv))
 
 pup[ob[j],dond]=pup[ob[j],dond]+ as.numeric(pupi)
+}
 }
 }
 

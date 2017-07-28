@@ -10,8 +10,8 @@ random forests. See I. Epifanio (2017). Intervention in prediction measure: a ne
  \tabular{ll}{
         Package: \tab IPMRF\cr
         Type: \tab Package\cr
-        Version: \tab 1.1\cr
-        Date: \tab 2017-07-15\cr
+        Version: \tab 1.1.1\cr
+        Date: \tab 2017-07-26\cr
     }
  Main Functions:
  \itemize{

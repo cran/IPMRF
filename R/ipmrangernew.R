@@ -17,25 +17,37 @@ ipmrangernew=function(marbolr,da,ntree){
   
   
   
-  totob=ntree
+  #totob=ntree
+	ob=dim(da)[1]
+
+totob=rep(ntree,ob)
+
   
   for (i in 1:ntree){
     #ar=getTree(marbolr,k=i) #sin label
     ar=getTreeranger(marbolr,k=i)
-    ob=dim(da)[1]
+   # ob=dim(da)[1]
     
     #which variables used in prediction
     for(j in 1:ob){
       da1=da[j,]
       wv=prevtree(ar,da1)
+			if (is.null(wv)){totob[j]=totob[j]-1}
+else{
+
       pupi=table(wv)/length(wv)
       dond= unique(sort(wv))
       
       pup[j,dond]=pup[j,dond]+ as.numeric(pupi)
     }
+		}
   }
   
-  pupf=pup/totob
+  #pupf=pup/totob
+	pupf=pup
+for(h in 1:dime[1]){
+pupf[h,]=pup[h,]/totob[h]}
+
   
   
   

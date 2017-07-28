@@ -31,7 +31,7 @@ Pierola, A. and Epifanio, I. and Alemany, S. (2016) An ensemble of ordered logis
 Epifanio, I. (2017) Intervention in prediction measure: a new approach to assessing variable importance for random forests. \emph{BMC Bioinformatics}, \bold{18}, 230.
 }
 \author{
-Stefano Nembrini
+Stefano Nembrini, Irene Epifanio
 }
 \note{
 See Epifanio (2017) about the parameters of RFs to be used, the advantages and limitations of IPM, and in particular when CART is considered with predictors of different types.

@@ -27,30 +27,41 @@ pup=matrix(0,nrow=dime[1],ncol=dime[2])}
 #}
 
 #totob=ntree-rowSums(mi) #number of times out-of-bag
-totob=ntree
+
+ob=dim(da)[1]
+
+totob=rep(ntree,ob)
+
 
 for (i in 1:ntree){
 
 ar=marbol@ensemble[[i]]
 
 
-ob=dim(da)[1]
 
 #which variables used to predict
 for(j in 1:ob){
 #da1=as.matrix(da[j,],nrow=1,ncol=dim(da)[2]) #attention, depending in format of data, use this or line below (commenting)
 da1=da[j,]
 wv=prevtreeparty(ar,da1) 
+if (is.null(wv)){totob[j]=totob[j]-1}
+else{
+
 pupi=table(wv)/length(wv)
 dond= unique(sort(wv))
 
 pup[j,dond]=pup[j,dond]+ as.numeric(pupi)
 }
 }
+}
 
 
-pupf=pup/totob
+#pupf=pup/totob
 
+pupf=pup
+for(h in 1:dime[1]){
+pupf[h,]=pup[h,]/totob[h]
+}
 
 
 dimnames(pupf)=dimnames(da)
