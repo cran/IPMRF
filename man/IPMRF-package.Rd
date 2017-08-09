@@ -10,8 +10,8 @@ random forests. See I. Epifanio (2017). Intervention in prediction measure: a ne
  \tabular{ll}{
         Package: \tab IPMRF\cr
         Type: \tab Package\cr
-        Version: \tab 1.1.1\cr
-        Date: \tab 2017-07-26\cr
+        Version: \tab 1.2\cr
+        Date: \tab 2017-08-09\cr
     }
  Main Functions:
  \itemize{
@@ -21,6 +21,7 @@ random forests. See I. Epifanio (2017). Intervention in prediction measure: a ne
 	\item {ipmrfnew:} {IPM casewise with CART-RF by \pkg{randomForest} for new samples}
 	\item {ipmranger:} {IPM casewise with RF by \pkg{ranger} for OOB samples}
 	\item {ipmrangernew:} {IPM casewise with RF by \pkg{ranger} for new samples}
+	\item {ipmgbmnew:} {IPM casewise with GBM by \pkg{gbm} for new samples}
  }
 }
 \author{Irene Epifanio, Stefano Nembrini}
@@ -31,6 +32,7 @@ Epifanio, I. (2017) Intervention in prediction measure: a new approach to assess
 }
 \keyword{Variable importance measure}
 \keyword{Random forest}
+\keyword{Generalized Boosted Regression}
 \seealso{
 %~~ Optional links to other man pages, e.g. ~~
 %~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~

@@ -37,7 +37,7 @@ Stefano Nembrini, Irene Epifanio
 See Epifanio (2017) about the parameters of RFs to be used, the advantages and limitations of IPM, and in particular when CART is considered with predictors of different types.
 }
 \seealso{
-\code{\link{ipmparty}}, \code{\link{ipmrf}}, \code{\link{ipmpartynew}}, \code{\link{ipmrfnew}}, \code{\link{ipmrangernew}}
+\code{\link{ipmparty}}, \code{\link{ipmrf}}, \code{\link{ipmpartynew}}, \code{\link{ipmrfnew}}, \code{\link{ipmrangernew}}, \code{\link{ipmgbmnew}}
 }
 \examples{
 #Note: more examples can be found at 
